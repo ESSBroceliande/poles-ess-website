@@ -44,4 +44,6 @@ config/database.yml
 .env
 
 db/seeds.rb
-openrc.sh
+/config/credentials/production.key
+credentials/*
+credentials.yml.enc
