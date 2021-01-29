@@ -47,3 +47,4 @@ db/seeds.rb
 /config/credentials/production.key
 credentials/*
 credentials.yml.enc
+openrc.sh

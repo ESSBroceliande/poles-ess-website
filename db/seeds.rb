@@ -24,18 +24,18 @@ Setting.logo_instance = 1  if Setting.logo_instance.blank?
 Setting.logo_instance.logo.attach(io: File.open('public/logo.png'), filename: 'logo.png', content_type: 'image/png')
 Setting.logo_instance_primary = 1  if Setting.logo_instance_primary.blank?
 Setting.logo_instance_primary.logo.attach(io: File.open('public/logo-primary.png'), filename: 'logo-primary.png', content_type: 'image/png')
-Setting.pole_name = "Pôle ESS"                        if Setting.pole_name.blank?
-Setting.pole_address = "Maison des associations"      if Setting.pole_address.blank?
-Setting.pole_address_complementary = "46 rue bidule"  if Setting.pole_address_complementary.blank?
-Setting.pole_city = "35999 Ville-de-Bretagne"         if Setting.pole_city.blank?
-Setting.pole_phone = "02 99 00 01 02"                 if Setting.pole_phone.blank?
-Setting.pole_mail = "pole@pole.fr"                    if Setting.pole_mail.blank?
-Setting.baseline = "Dynamiser les projets d'utilité sociale sur le territoire"    if Setting.baseline.blank?
-Setting.newsletter_subscription_title = "Inscrivez-vous à notre anti-newsletter"  if Setting.newsletter_subscription_title.blank?
-Setting.newsletter_subscription_description = "Anti-newsletter ? Une info par lettre, soignée et choyée, à échéance régulière dans votre boîte aux lettres" if Setting.newsletter_subscription_description.blank?
+Setting.pole_name = "Pôle ESS Brocéliande"                        if Setting.pole_name.blank?
+Setting.pole_address = "La ville Cotterel, BP 86048"      if Setting.pole_address.blank?
+Setting.pole_address_complementary = "48 rue de St Malo"  if Setting.pole_address_complementary.blank?
+Setting.pole_city = "35360 Montauban de Bretagne"         if Setting.pole_city.blank?
+Setting.pole_phone = "02 99 06 32 44"                 if Setting.pole_phone.blank?
+Setting.pole_mail = "coordination@broceliande-richesses-associatives.org"                    if Setting.pole_mail.blank?
+Setting.baseline = "Dynamiser les projets d'utilité sociale sur le territoire de Brocéliande"    if Setting.baseline.blank?
+Setting.newsletter_subscription_title = "Inscrivez-vous à notre newsletter"  if Setting.newsletter_subscription_title.blank?
+Setting.newsletter_subscription_description = "Newsletter ? Une info par lettre, soignée et choyée, à échéance régulière dans votre boîte aux lettres"                        if Setting.newsletter_subscription_description.blank?
 Setting.contact_bloc_description = "Vous avez des tonnes de question ? Vous souhaitez mieux identifier ce qui existe sur le territoire ?" if Setting.contact_bloc_description.blank?
 Setting.contact_bloc_button = "Contacter le pôle" if Setting.contact_bloc_button.blank?
-Setting.admin_emails = %w[bonjour@lassembleuse.fr]    if Setting.admin_emails.blank?
+Setting.admin_emails = %w[bonjour@lassembleuse.fr coordination@broceliande-richesses-associatives.org mathilde.herault@broceliande-richesses-associatives.org]    if Setting.admin_emails.blank?
 
 EmailTemplate.where(mailer: "ParticipantMailer", mail_name: "new_subscription").first_or_create(body: "Le pôle vous recontactera rapidement pour préciser les détails pratiques et le règlement.")
 
