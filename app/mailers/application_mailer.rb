@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'bonjour@lassembleuse.fr'
+  default from: 'coordination@ess-broceliande.bzh'
   layout 'mailer'
 end
